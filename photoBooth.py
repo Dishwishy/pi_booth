@@ -16,6 +16,9 @@ def createPixStrip():
 
 def sayCheese():
     with picamera.PiCamera() as camera:
+    	#will need to change this after testing 
+    	#different picture sizes
+    
         camera.resolution = (1024,768)
 	global imgPath
         for i in range(0,3):
