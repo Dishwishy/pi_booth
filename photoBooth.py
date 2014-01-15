@@ -4,6 +4,8 @@ import picamera
 import RPi.GPIO as GPIO
 import subprocess
 
+#using the GPIO 23 pin as marked on the 
+#adafruit breakout board
 pushBtn = 23
 imgPath = './images/'
 
@@ -16,7 +18,7 @@ def createPixStrip():
 
 def sayCheese():
     with picamera.PiCamera() as camera:
-        camera.resolution = (1024,768)
+        camera.resolution = (800,600)
 	global imgPath
         for i in range(0,3):
             camera.start_preview()
