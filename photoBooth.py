@@ -25,7 +25,7 @@ def printPix():
 def createPixStrip():
     global imgPath
     Proc = subprocess.Popen(['montage', imgPath + 'pic0.jpg', imgPath + 'pic1.jpg', 
-        imgPath +'pic2.jpg', '-mode', 'Concatenate', '-tile', '1x3', imgPath + 'montage.jpg']) 
+        imgPath +'pic2.jpg', '-mode', 'Concatenate', '-tile', '1x3', imgPath + 'montage.jpg' + str(time.time())]) 
 
 #call our 3,2,1 countdown blob
 def countDown():
